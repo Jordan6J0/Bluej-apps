@@ -1,0 +1,8 @@
+Student ben = new Student("Ben", "12345678");
+Course course1 = new Course("Computing", 400);
+ben.enrolCourse(course1);
+course1.print();
+Course Computing code 400
+ben.print();
+Ben, student ID: 12345678, credits: 0
+Course Computing code 400

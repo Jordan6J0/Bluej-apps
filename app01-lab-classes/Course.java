@@ -2,8 +2,8 @@
 /**
  * Write a description of class Course here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Jordan Njie
+ * @version 0.1 03/10/20
  */
 public class Course
 {
@@ -19,4 +19,8 @@ public class Course
         this.code = code;
     }
 
+    public void print()
+    {
+        System.out.println("Course " + title + " code " + code);
+    }
 }
