@@ -1,0 +1,20 @@
+LabClass co452Lab = new LabClass(3);
+Student ben = new Student("Ben", "01920");
+Student alex = new Student("Alex", "01930");
+Student lewis = new Student("Lewis", "01940");
+ben.addCredits(20);
+alex.addCredits(20);
+lewis.addCredits(20);
+co452Lab.setRoom("G100");
+co452Lab.setTime("29/09/2020");
+co452Lab.setInstructor("Nicholas Day");
+lewis.getLoginName()
+    returned String "Lewi019"
+lewis.getStudentID()
+    returned String "01940"
+lewis.getName()
+    returned String "Lewis"
+lewis.getCredits()
+    returned int 20
+lewis.getClass()
+    returned Object <object reference>
