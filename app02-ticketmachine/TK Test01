@@ -1,0 +1,15 @@
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+ticket1.print();
+Ticket Aylesburycost : 220 issued Mon Oct 12 17:01:30 BST 2020
+Ticket ticket2 = new Ticket("Amersham", 300);
+Ticket ticket3 = new Ticket("High Wycombe", 330);
+ticket2.print();
+Ticket Amershamcost : 300 issued Mon Oct 12 17:03:51 BST 2020
+ticket3.print();
+Ticket High Wycombecost : 330 issued Mon Oct 12 17:04:12 BST 2020
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+ticket1.print();
+Ticket Aylesburycost : 220 issued Mon Oct 12 17:23:36 BST 2020
+TicketMachine ticketMa1 = new TicketMachine(220);
+Ticket ticket2 = new Ticket("Aylesbury", 220);
+TicketMachine ticketMa2 = new TicketMachine(220);
