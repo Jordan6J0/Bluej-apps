@@ -6,6 +6,8 @@ import java.util.*;
  * 
  * @author Michael Kölling and David Barnes
  * @version 2016.02.29
+ * @modified by Jordan Njie
+ * @version 0.01
  */
 public class Student
 {
@@ -16,6 +18,10 @@ public class Student
     // the amount of credits for study taken so far
     private int credits;
     
+    private Course course;
+    
+    
+    
     /**
      * Create a new student with a given name and ID number.
      */
@@ -23,7 +29,7 @@ public class Student
     {
         name = fullName;
         id = studentID;
-        credits = 0;
+   
     }
 
     /**
@@ -84,4 +90,13 @@ public class Student
     {
         System.out.println(name + ", student ID: " + id + ", credits: " + credits);
     }
+    
+   
+    
+    public void enrolCourse(Course course)
+    {
+          this.course = course;
+    }
+    
+    
 }
