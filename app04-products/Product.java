@@ -3,6 +3,8 @@
  * 
  * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
+ * @Mod Jordan Njie 
+ * @version V0.01
  */
 public class Product
 {
@@ -64,7 +66,7 @@ public class Product
      * @param amount The number of new items added to the stock.
      *               This must be greater than zero.
      */
-    public void increaseQuantity(int amount)
+    public void deliver(int amount)
     {
         if(amount > 0) 
         {
@@ -81,16 +83,27 @@ public class Product
      * Sell one of these products.
      * An error is reported if there appears to be no stock.
      */
-    public void sellOne()
+    public void sell(int amount)
     {
-        if(quantity > 0) 
+        if(quantity >= amount && quantity >0) 
         {
-            quantity--;
+            quantity -= amount;
+            System.out.println("Sold " + amount + "of " + name);
         }
-        else 
+        else if(amount > quantity && quantity >0)
+        {
+            System.out.println("limited of Stock = " + quantity + "amount ordered =" + amount);
+            quantity = 0;
+        }
+        else
         {
             System.out.println(
                 "Attempt to sell an out of stock item: " + name);
         }
+    }
+    
+    public void setNamee(String name)
+    {
+        this.name = name;
     }
 }
