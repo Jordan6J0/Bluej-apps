@@ -1,4 +1,3 @@
-import java.util.HashSet;
 import java.util.Scanner;
 
 /**
@@ -7,6 +6,8 @@ import java.util.Scanner;
  * 
  * @author     Michael Kölling and David J. Barnes
  * @version    0.1 (2016.02.29)
+ * Mod Jordan NJie
+ * ver 0.11  26/11/20
  */
 public class InputReader
 {
@@ -26,11 +27,11 @@ public class InputReader
      *
      * @return  A String typed by the user.
      */
-    public String getInput()
+    public String getString()
     {
         System.out.print("> ");         // print prompt
         String inputLine = reader.nextLine();
-
+        
         return inputLine;
     }
 }
